@@ -1,0 +1,12 @@
+* {
+	font-family: monaco;
+
+}
+body {
+	background-color: black;
+}
+div {
+	margin-top: 5%;
+	padding: 30px;
+	background-color: yellow;
+}

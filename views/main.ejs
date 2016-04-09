@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quipping Dojo Quotes Page</title>
+		<link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Happy Quotes!</h1>
+			<% for (var i = quotes.length-1; i >= 0; i--){ %>
+				<h4>"<%= quotes[i].quote %>"</h4>
+				<h6>-<%= quotes[i].name %>, <%= quotes[i].time %></h6>
+				<h6>likes: <%= quotes[i].likes %></h6>
+				<a href="/like/quote?id=<%= quotes[i].id %>">like!</a>
+				<% } %>
+		</div>
+	</body>
+</html>

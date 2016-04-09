@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quipping Dojo</title>
+		<link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+		<link rel="stylesheet" href="/style.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<form class="quote_form" action="/main" method="post">
+				Name: <input type="text" name="name" value="">
+				 Quotation: <input type="text" name="quote" value="">
+				<input class="btn btn-primary" type="submit" name="submit" value="submit">
+				<a class="btn btn-info" href="/main">Or just go straight to the quotes page</a>
+			</form>
+			<% if (err){ %>
+				<h4>"<%= err %>"</h4>
+				<% } %>
+		</div>
+	</body>
+</html>
